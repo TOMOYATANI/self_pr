@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/* <====== 全体共通 ======> */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.font-title {
+  font-family: "Caveat", cursive;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+/* <====== 変数 ======> */
+/* <====== nav-header ======> */
+.nav-inner {
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.719);
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-inner .nav-title {
+  width: 20rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-inner .nav-title .nav-main-title {
+  font-size: 2rem;
+}
+
+.nav-inner .nav-title .nav-sub-title {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-inner .nav-header-menu {
+  width: 34rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-inner .nav-header-menu .nav-sns-menu .nav-sns-list {
+  width: 38%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+}
+
+.nav-item a {
+  color: black;
+  font-weight: bold;
+}
+
+/* <====== photo ======> */
+h2#photo {
+  margin-top: 15rem;
+}
+
+.photo-title {
+  font-size: 2.2rem;
+  margin-top: 5rem;
+}
+
+.photo-inner {
+  width: 100%;
+}
+
+.photo-inner .photo-inner-items {
+  width: 90%;
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.photo-inner .photo-inner-items .photo-inner-item {
+  padding: 1rem;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* <====== footer ======> */
+.footer-nav {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 7rem;
+}
+
+.footer-nav .font-title {
+  color: #fff;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+}
+
+#content {
+  position: relative;
+}
+
+/* <====== top-button ======> */
+#top-button {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #313131;
+  color: white;
+}
+
+/* <====== Media Queries======> */
+/* <====== 全体共通 ======> */
+@media (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* <====== nav ======> */
+@media (max-width: 600px) {
+  .nav-inner .nav-title .nav-main-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-inner .nav-title .nav-sub-title {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+/* <====== photo ======> */
+@media (max-width: 1024px) {
+  .photo-inner .photo-inner-items .photo-inner-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-inner .photo-inner-items .photo-inner-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* <====== ボタンを装飾 ======> */
+@media (max-width: 1024px) {
+  .burger-btn {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    z-index: 3;
+    border: none;
+    background-color: black;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bar {
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bar_top {
+    top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bar_mid {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .bar_bottom {
+    bottom: 10px;
+  }
+}
+
+/* <====== 3本線が☓印 ======> */
+@media (max-width: 1024px) {
+  .burger-btn.close .bar_top {
+    -webkit-transform: translate(-50%, 10px) rotate(45deg);
+            transform: translate(-50%, 10px) rotate(45deg);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .burger-btn.close .bar_bottom {
+    -webkit-transform: translate(-50%, -8px) rotate(-45deg);
+            transform: translate(-50%, -8px) rotate(-45deg);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+}
+
+/* <====== ハンバーガーメニューを全画面表示 ======> */
+@media (max-width: 1024px) {
+  .nav-inner .nav-header-menu .nav-sns-menu .nav-sns-list {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu li a {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-menu li a {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-snu-color {
+    color: white;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-snu-color {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-item {
+    padding: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-item {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-sns-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-inner .nav-header-menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-inner .nav-header-menu .nav-sns-menu {
+    width: 100%;
+    height: 30%;
+    background-color: #1b1310;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-inner .nav-header-menu .nav-sns-menu ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    width: 100%;
+    height: 70%;
+    background-color: #18100e;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu.nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu.nav-item {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+}
+/*# sourceMappingURL=photo.css.map */
